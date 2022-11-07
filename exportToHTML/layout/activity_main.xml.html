@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>activity_main.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #e8bf6a;}
+.s1 { color: #bababa;}
+.s2 { color: #6a8759;}
+.s3 { color: #a9b7c6;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+activity_main.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s2">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s2">=&quot;utf-8&quot;</span><span class="s0">?&gt;</span>
+<span class="s0">&lt;androidx.constraintlayout.widget.ConstraintLayout </span><span class="s1">xmlns:android</span><span class="s2">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="s1">xmlns:app</span><span class="s2">=&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="s1">xmlns:tools</span><span class="s2">=&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="s1">android:id</span><span class="s2">=&quot;@+id/Resultado&quot;</span>
+    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">tools:context</span><span class="s2">=&quot;.MainActivity&quot;</span><span class="s0">&gt;</span>
+
+    <span class="s0">&lt;Button</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/btnCalcula&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;60dp&quot;</span>
+        <span class="s1">android:background</span><span class="s2">=&quot;#E91E63&quot;</span>
+        <span class="s1">android:backgroundTint</span><span class="s2">=&quot;@color/teal_700&quot;</span>
+        <span class="s1">android:onClick</span><span class="s2">=&quot;btnCalcula&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;Calcular IMC&quot;</span>
+        <span class="s1">app:iconTint</span><span class="s2">=&quot;#E91E63&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/resultadoTxt&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;EditText</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/alturaTxt&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginEnd</span><span class="s2">=&quot;2dp&quot;</span>
+        <span class="s1">android:layout_marginBottom</span><span class="s2">=&quot;46dp&quot;</span>
+        <span class="s1">android:ems</span><span class="s2">=&quot;10&quot;</span>
+        <span class="s1">android:inputType</span><span class="s2">=&quot;number|numberDecimal&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toTopOf</span><span class="s2">=&quot;@+id/textView2&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;@+id/pesoTxt&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/textView&quot;</span>
+        <span class="s1">tools:ignore</span><span class="s2">=&quot;SpeakableTextPresentCheck&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/textView&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;3dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;134dp&quot;</span>
+        <span class="s1">android:layout_marginBottom</span><span class="s2">=&quot;5dp&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;Informe a Altura:&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toTopOf</span><span class="s2">=&quot;@+id/alturaTxt&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;@+id/alturaTxt&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;EditText</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/pesoTxt&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginBottom</span><span class="s2">=&quot;28dp&quot;</span>
+        <span class="s1">android:ems</span><span class="s2">=&quot;10&quot;</span>
+        <span class="s1">android:inputType</span><span class="s2">=&quot;number&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toTopOf</span><span class="s2">=&quot;@+id/resultadoTxt&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/textView2&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/textView2&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;3dp&quot;</span>
+        <span class="s1">android:layout_marginBottom</span><span class="s2">=&quot;4dp&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;Informe o Peso:&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toTopOf</span><span class="s2">=&quot;@+id/pesoTxt&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;@+id/pesoTxt&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/alturaTxt&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/resultadoTxt&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;184dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;48dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;32dp&quot;</span>
+        <span class="s1">android:textAlignment</span><span class="s2">=&quot;center&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.5&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/pesoTxt&quot; </span><span class="s0">/&gt;</span>
+
+<span class="s0">&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</span></pre>
+</body>
+</html>
